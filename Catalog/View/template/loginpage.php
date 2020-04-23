@@ -74,7 +74,7 @@
     </form>
 
     <?php
-        require 'd:/OSPanel/OSPanel/domains/localhost/Catalog/Controller/controller.php';
+        require '../../Controller/controller.php';
         $new = new controller;
         $new->getUsers();
     ?>
