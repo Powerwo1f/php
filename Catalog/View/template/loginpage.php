@@ -69,12 +69,12 @@
         </div>
         <div class="bottom">
             <button type="submit" name="submit" >Login</button>
-            <p class="register">Don't have an account?<a href="index.html">Register</a>!</p>
+            <p class="register">Don't have an account?<a href="authorization.html">Register</a>!</p>
         </div>
     </form>
 
     <?php
-        require '../../Controller/controller.php';
+        require '../../Controller/authorization.php';
         $new = new controller;
         $new->getUsers();
     ?>

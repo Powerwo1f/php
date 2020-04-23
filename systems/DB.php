@@ -4,8 +4,8 @@ class db {
 
     private $db;
 
-    function __construct() {
-        $this->db = new mysqli("127.0.0.1", "root", "", 'users');
+    function __construct($host, $user, $password, $db) {
+        $this->db = new mysqli($host, $user, $password, $db);
         if ($this->db->connect_error) {
             trigger_error('Error: Could not make a database link (' . $this->db->connect_errno . ') ' . $this->db->connect_error);
         }
@@ -19,7 +19,7 @@ class db {
                 $i = 0;
                 $data = array();
 
-                while($row = $result->fetch_array()) {
+                while($row = $result->fetch_array(MYSQLI_ASSOC)) {
                     $data[$i] = $row;
                     $i++;
                 }
