@@ -2,7 +2,6 @@
 
 class Authorization extends Controller {
 
-    protected $data;
     protected $model;
 
     public function index() {
