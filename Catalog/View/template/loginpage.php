@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <style>@import url("loginpagestyle.css")</style>
+    <style>@import url("style.css")</style>
 </head>
 <body>
 
@@ -23,11 +23,11 @@
         </div>
     </form>
 
-    <?php
-        require '../../Controller/authorization.php';
-        $new = new controller;
-        $new->getUsers();
-    ?>
+<!--    --><?php
+//        require '../../Controller/authorization.php';
+//        $new = new controller;
+//        $new->getUsers();
+//    ?>
 
 </body>
 
